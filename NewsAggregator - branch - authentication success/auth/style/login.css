@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(135deg, #007bff 0%, #ffffff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.8); /* Glass effect */
+    border-radius: 15px; /* Slightly smaller radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Smaller width */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 20px;
+    opacity: 0; /* Start invisible */
+    animation: slideIn 0.5s ease forwards; /* Optional: Apply animation on load */
+}
+
+.form-control {
+    height: 38px; /* Adjust input height */
+    font-size: 14px; /* Smaller font size */
+}
+
+.btn-primary {
+    height: 38px; /* Adjust button height */
+    font-size: 14px; /* Smaller font size */
+    padding: 0 15px; /* Adjust padding */
+}
+
+h2 {
+    font-size: 20px; /* Smaller heading size */
+}
+
+.social-login p {
+    font-size: 12px; /* Smaller font size for social login text */
+}
+
+.divider span {
+    font-size: 12px; /* Smaller font size for divider text */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0); /* Start at the original position */
+        opacity: 1; /* Start fully visible */
+    }
+    to {
+        transform: translateY(-100%); /* Move out of the viewport */
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Apply the animations to the login and register containers */
+.login-container, .form-container {
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease-in-out forwards; /* Apply the slide-in animation */
+}

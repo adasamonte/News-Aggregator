@@ -1,0 +1,165 @@
+/* landing.css */
+
+body {
+    /* Updated to match the login page background */
+    background: linear-gradient(135deg, #007bff 0%, #ffffff 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header, .container, .logo, .description, .description-container .btn, .footer {
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease-in-out forwards; /* Apply the slide-in animation */
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: calc(62% + 70px); /* Adjusted from 100px to 70px to move it an additional 30 pixels to the left */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    padding: 20px;
+    z-index: 1000; /* Ensure the header is above other elements */
+    color: white; /* Ensure text color is white */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3); /* Lowered opacity for black outglow effect */
+    animation-delay: 0.1s; /* Delay for header */
+}
+
+.nav-container {
+    display: flex; /* Use flexbox for the navigation links */
+    padding-right: 20px; /* Adjust padding to prevent overflow */
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Space between links */
+    font-size: 19.8px; /* Increase font size by 10% (from 18px to 19.8px) */
+    font-weight: bold; /* Make the font bolder */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px 15px; /* Add padding for better clickability */
+}
+
+/* Remove margin-left from the first link to maintain consistent spacing */
+.nav-container a:first-child {
+    margin-left: 0; /* No margin for the first link */
+}
+
+.nav-container a:hover {
+    color: #b19cd9; /* Change hover color to a lighter shade of purple */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Ensure text is left-aligned */
+    margin: 0 auto; /* Center the container */
+    max-width: 600px; /* Set a max width for the container */
+    animation-delay: 0.2s; /* Delay for container */
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease-in-out forwards; /* Apply the slide-in animation */
+}
+
+.logo {
+    position: relative; /* Keep it relative for consistent positioning */
+    max-width: 100%; /* Increase the max-width to allow for larger size */
+    height: auto; /* Maintain aspect ratio */
+    left: -210px; /* Keep the logo 210 pixels to the left */
+    top: -80px; /* Move the logo up by 80 pixels */
+    width: calc(80% + 20px); /* Increase the width by 20 pixels */
+    animation-delay: 0.3s; /* Delay for logo */
+}
+
+.logo-img {
+    width: 100%; /* Set the width to 100% for responsive resizing */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.description {
+    font-family: Arial, sans-serif; /* Use a sans-serif font */
+    font-size: 16px; /* Adjust font size as needed */
+    margin: 10px 0; /* Space above and below the paragraph */
+    color: white; /* Ensure text color is white */
+    font-style: italic; /* Make the text italic */
+    font-weight: 300; /* Set font weight to thin */
+    left: -210px; /* Keep the paragraph 210 pixels to the left */
+    position: relative; /* Keep it relative for positioning */
+    top: -140px; /* Move the paragraph up by an additional 20 pixels (previously -120px) */
+    animation-delay: 0.4s; /* Delay for description */
+}
+
+.button-container {
+    margin-top: 10px; /* Space between the paragraph and the button */
+    display: flex; /* Use flexbox to align items if needed */
+    justify-content: flex-start; /* Align the button to the left */
+}
+
+.description-container .btn {
+    background-color: transparent; /* Remove fill */
+    color: white; /* Text color */
+    border: 2px solid white; /* White border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    font-style: italic; /* Make the button text italic */
+    font-weight: 300; /* Set font weight to thin */
+    margin-top: 10px; /* Space above the button */
+    margin-left: -210px; /* Move the button 10 pixels to the right (previously -220px) */
+    position: relative; /* Ensure it can be positioned relative to its normal position */
+    z-index: 1; /* Ensure it appears above other elements */
+    top: -140px; /* Keep the button up by 80 pixels */
+    animation-delay: 0.5s; /* Delay for button */
+}
+
+.content .btn:hover {
+    background-color: white; /* Change background on hover */
+    color: #333; /* Change text color on hover */
+}
+
+.footer {
+    position: absolute; /* Position it at the bottom */
+    bottom: 0; /* Align to the bottom of the page */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    text-align: center; /* Center the text */
+    color: white; /* Change text color to white */
+    padding: 10px 0; /* Add some padding */
+    z-index: 100; /* Ensure it appears above other elements */
+    font-size: 18px; /* Increase font size for better visibility */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3); /* Black outglow effect */
+    animation-delay: 0.6s; /* Delay for footer */
+}
+
+.footer-logo {
+    width: 20px; /* Set a width for the logos */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align logos with text */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%); /* Start from below the viewport */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* End fully visible */
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0); /* Start at the original position */
+        opacity: 1; /* Start fully visible */
+    }
+    to {
+        transform: translateY(-100%); /* Move out of the viewport */
+        opacity: 0; /* Fade out */
+    }
+}

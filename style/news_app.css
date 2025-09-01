@@ -1,0 +1,349 @@
+/* Add this to your existing CSS file (e.g., landing.css or news_app.css) */
+
+/* Button styles */
+.btn {
+    border-radius: 5px; /* Add rounded corners */
+    background-color: rgba(0, 123, 255, 1); /* Blue background for Save Article button */
+    color: white; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Glass effect for the back to dashboard button */
+.glass-button {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for glass-like appearance */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* White border */
+    color: white; /* Text color */
+}
+
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #007bff 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: black; /* Set all headings and paragraphs to black */
+}
+
+button, .btn {
+    border-radius: 5px; /* Add rounded corners to buttons */
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    backdrop-filter: blur(10px); /* Blur effect for glass-like appearance */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Specific styles for the Back to Dashboard button */
+.back-to-dashboard {
+    background: none; /* Remove background */
+    color: black; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Padding */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-to-dashboard:hover {
+    color: rgba(0, 0, 0, 0.7); /* Change color on hover */
+}
+
+/* Glass effect for articles */
+.article {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px; /* Increased spacing between articles */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.article h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.article .date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.article-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.article-actions .btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+/* Search and filter bar styles */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-bar input,
+.search-bar select {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.search-bar button {
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background: #0056b3;
+}
+
+/* Glass effect for the navigation bar */
+.nav {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for glass-like appearance */
+    padding: 10px; /* Padding inside the nav */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* White grid container */
+.grid-container {
+    background-color: white; /* White background for the grid */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the grid */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto; /* Center the grid */
+    max-width: 1200px; /* Set a max width for the grid */
+}
+
+/* Decorative image styling */
+.decorative-image {
+    display: block; /* Center the image */
+    margin: 0 auto 20px; /* Center and add space below */
+    width: 100px; /* Set a width for the decorative image */
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #0056b3, #007bff);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main Container Styles */
+.main-container {
+    max-width: 800px;
+    width: 90%;
+    margin: -50px auto 40px;
+    padding: 40px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.content-wrapper {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Left and Right Column Styles */
+.column {
+    flex: 1; /* Allow columns to grow equally */
+    max-width: 150px; /* Set a max width for the columns */
+    padding: 10px; /* Padding inside the columns */
+}
+
+/* Main Content Styles */
+.main-content {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    flex: 2; /* Allow main content to take more space */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    width: 100%;
+    background: linear-gradient(135deg, #007bff 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; /* Remove top margin to extend below header */
+    overflow: visible;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 123, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+}
+
+.hero-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-logo {
+    display: none; /* Hide the hero logo since we're using it on the main container */
+}
+
+/* Main Logo Styles */
+.main-logo {
+    width: 400px; /* Increased from 100px to 200px */
+    height: auto;
+    position: absolute;
+    left: 10px; /* Align with main container's left padding */
+    transform: translateY(-100px); /* Move up by 10px from original position */
+    top: 0;
+    z-index: 2;
+}
+
+/* Search Section */
+.search-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto 30px; /* Increased top margin to accommodate logo */
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Article Container */
+.articles-container {
+    width: 100%;
+    max-width: 700px; /* Match search section width */
+    margin: 0 auto;
+}
+
+/* Article Styles */
+.article {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    width: 100%; /* Full width of its container */
+}
+
+.article h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.article .date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.article-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.article-actions .btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+/* Results Heading */
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%;
+        padding: 20px;
+        margin-top: -30px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar select,
+    .search-bar button {
+        max-width: 100%;
+        width: 100%;
+    }
+}

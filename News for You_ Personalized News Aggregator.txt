@@ -1,0 +1,89 @@
+﻿News for You: Personalized News Aggregator
+
+I. Introduction
+The overwhelming volume of news content, spanning local, international, sports, and entertainment topics, makes it difficult for users to track information relevant to their interests. With numerous sources and subjects to choose from, users often struggle to filter through the contents, leading to an unsatisfactory news consumption experience. As many news websites rapidly becomes available, it becomes challenging to determine which sources are most reliable and credible on a given topic. To address this, we aim to create a Personalized News Aggregator that will help users filter and find news that is relevant to their specific interests. Moreover, in partnership with “Future Business Teachers’ Organization”, we will work side by side to build a platform that bridges seamless information while fostering awareness and engagement through a user-curated experience
+
+
+II. Problem Statement and Objectives
+
+
+•  Develop the user information and database for users to login or register their accounts to use
+the website.
+• Develop a user preference/filter system which allows the user to select their preferences in
+terms of news content
+• Integrate the News API to retrieve news articles and apply the filtering system based on the
+chosen preferences of the user. Furthermore, metadata will be used for better filtering
+• The website will ensure that the system is updated in terms of news contents through the
+display of timestamps for article updates.
+• Implement a filtering system and search bar.
+• The website will support multi-platform accessibility. We will use JavaScript, HTML, and
+PHP.
+• Implement a bookmarking feature to save articles that users would like to read again.
+• Implement a user-friendly interface that makes it easy for users to hover through and use the
+website.
+
+
+III. UN SDGs Addressed
+Since the project’s nature is to provide information, it will be able to address 15 of the 17 United Nations’ Sustainable Development Goals by promoting awareness to specific topics. 
+1. No Poverty (SDG 1)
+* Aggregating news on poverty and social welfare programs.
+* Promoting initiatives and policies aimed at reducing poverty.
+2. Zero Hunger (SDG 2)
+* Featuring news about food security, agricultural advancements, and relief programs.
+* Highlighting efforts by the government and NGOs at achieving food security.
+3. Good Health and Well-being (SDG 3)
+* Providing information about advancements in medicine, health crises, and mental health awareness.
+4. Quality Education (SDG 4)
+* Aggregating news highlighting innovations in online learning and efforts to bridge the education gap.
+5. Gender Equality (SDG 5)
+* Raising awareness about women's rights, gender-based violence, and policies promoting gender equality.
+6. Clean Water and Sanitation (SDG 6)
+* Highlighting water scarcity, pollution, and efforts to improve access to clean water and sanitation.
+7. Affordable and Clean Energy (SDG 7)
+* Aggregating news about renewable energy, climate change, and sustainable energy solutions.
+8. Decent Work and Economic Growth (SDG 8)
+* Covering job market trends, economic policies, and labor rights issues.
+* Reporting on workplace conditions, automation, and the gig economy.
+9. Industry, Innovation, and Infrastructure (SDG 9)
+* Highlighting emerging industries and innovations driving economic growth.
+10. Reduced Inequalities (SDG 10)
+* Providing news on social justice, economic inequality, and policies that promote equal opportunities.
+11. Sustainable Cities and Communities (SDG 11)
+* Showcasing initiatives that improve living conditions in urban and rural areas.
+12. Responsible Consumption and Production (SDG 12)
+* Highlighting news about corporate social responsibility and environmental impact.
+13. Climate Action (SDG 13)
+* Highlighting activism and scientific research related to sustainability.
+14. Peace, Justice, and Strong Institutions (SDG 16)
+* Aggregating news on human rights, governance, anti-corruption efforts, and legal reforms.
+15. Partnerships for the Goals (SDG 17)
+* Highlighting success stories of international cooperation for development.
+By aggregating content across these areas, the project can raise awareness, inform decision-makers, and inspire action toward achieving these global goals.
+
+
+IV. Scope of the Project
+The final result of this project will be a fully functional Personalized News Aggregator website, which will allow users to register, log in, set their news preferences, filter articles, search for content, bookmark articles, and receive real-time news updates. The website will be built using JavaScript, HTML, and PHP, and will be accessible across multiple platforms. 
+
+
+The development process will begin with creating a user authentication system for login and registration, followed by setting up the database using PHP and XAMPP. The integration of a news API will be done through https://www.thenewsapi.com/ to provide free, worldwide news, and a filtering system will be implemented based on user preferences such as Local, International, Sports, and Entertainment news. Metadata will also be applied to improve filtering accuracy.
+
+
+The user interface will be designed to be responsive, utilizing JavaScript, HTML, and CSS, and a theme will be chosen for the website's design. Functionalities will include a search bar for keyword-based filtering, a bookmarking feature for saving read articles, and the display of timestamps for real-time news updates. 
+
+
+Finally, the website will undergo thorough testing and debugging while working closely with the client to ensure all features work as expected, including cross-platform testing to ensure compatibility across different devices and systems.
+
+
+V. Functional/ Non-functional Requirements
+VI. Database Design (ERD)
+VII. Features of the System
+1. Sitemap
+
+
+2. Wireframes
+VIII. Communication Letter
+
+
+IX. Acceptance Letter
+X. Test Results
+XI. Screenshots of the functions of the system (With description)

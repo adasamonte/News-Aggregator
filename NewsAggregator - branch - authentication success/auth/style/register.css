@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(135deg, #007bff 0%, #ffffff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Glass effect */
+    border-radius: 15px; /* Slightly smaller radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px; /* Smaller width */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 20px;
+    text-align: center; /* Center text and elements */
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease-in-out forwards; /* Apply the slide-in animation */
+}
+
+h1 {
+    font-size: 24px; /* Heading size */
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin: 0 auto 20px; /* Center the image */
+    border: 2px solid #64a64d; /* Optional border */
+    display: block; /* Ensure it behaves as a block element */
+}
+
+input[type="file"] {
+    margin-bottom: 20px; /* Space below the file input */
+}
+
+.form-control {
+    height: 38px; /* Adjust input height */
+    font-size: 14px; /* Smaller font size */
+}
+
+.btn-primary {
+    height: 38px; /* Adjust button height */
+    font-size: 14px; /* Smaller font size */
+    padding: 0 15px; /* Adjust padding */
+}
+
+.social-login p {
+    font-size: 12px; /* Smaller font size for social login text */
+}
+
+.divider span {
+    font-size: 12px; /* Smaller font size for divider text */
+}
+
+.back-to-login {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.back-to-login a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-to-login a:hover {
+    text-decoration: underline;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%); /* Start from below the viewport */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* End fully visible */
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0); /* Start at the original position */
+        opacity: 1; /* Start fully visible */
+    }
+    to {
+        transform: translateY(-100%); /* Move out of the viewport */
+        opacity: 0; /* Fade out */
+    }
+}
